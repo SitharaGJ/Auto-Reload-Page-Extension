@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auto Reload Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 220px;
+      padding: 10px;
+      background-color: #e0f7e9;
+    }
+    h3 {
+      color: #2e7d32;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      color: #2e7d32;
+    }
+    input {
+      width: 100%;
+      margin-top: 5px;
+      padding: 5px;
+      border: 1px solid #2e7d32;
+      border-radius: 4px;
+      outline-color: #2e7d32;
+    }
+    button {
+      margin-top: 10px;
+      width: 100%;
+      padding: 10px;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button.start {
+      background-color: #4caf50;
+    }
+    button.start:hover {
+      background-color: #45a049;
+    }
+    button.stop {
+      background-color: #f44336;
+    }
+    button.stop:hover {
+      background-color: #e53935;
+    }
+    p {
+      margin-top: 10px;
+      color: #2e7d32;
+    }
+    select {
+      width: 100%;
+      margin-top: 5px;
+      padding: 5px;
+      border: 1px solid #2e7d32;
+      border-radius: 4px;
+      outline-color: #2e7d32;
+    }
+  </style>
+</head>
+<body>
+  <h3>Auto Reload Pages</h3>
+  <label for="minTime">Min Time (seconds):</label>
+  <input type="number" id="minTime" min="1" required>
+  <label for="maxTime">Max Time (seconds):</label>
+  <input type="number" id="maxTime" min="1" required>
+  <label for="tabSelect">Select Tab to Reload:</label>
+  <select id="tabSelect"></select>
+  <button id="toggleReload" class="start">Start</button>
+  <p id="countdown">Next reload in: <span id="time">N/A</span> seconds</p>
+  <script src="popup.js"></script>
+</body>
+</html>
