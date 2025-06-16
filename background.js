@@ -54,3 +54,8 @@ function stopReloading() {
   chrome.storage.local.set({ countdown: 'N/A' });
   chrome.action.setBadgeText({ text: '' });
 }
+
+// Export functions for testing in Node environment
+if (typeof module !== 'undefined') {
+  module.exports = { startReloading, stopReloading };
+}
