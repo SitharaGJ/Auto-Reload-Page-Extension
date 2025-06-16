@@ -1,0 +1,13 @@
+{
+  "name": "auto-reload-page-extension",
+  "version": "1.0.0",
+  "description": "Auto Reload Page Extension This Chrome extension allows users to automatically reload a specified tab at random intervals within a given minimum and maximum time range.",
+  "main": "background.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
